@@ -1,34 +1,205 @@
 {
-    "entrees": [
-        { "name": "Hummus and Hot Sauce", "price": 6.00, "id": 1 },
-        { "name": "Chicken Fried Lamb Kabob", "price": 14.25, "id": 2 },
-        { "name": "Hot Chicken Greek Salad", "price": 10.50, "id": 3 },
-        { "name": "Brussel Sprout Moussaka", "price": 11.50, "id": 4 },
-        { "name": "Okrakopita", "price": 8.40, "id": 7 },
-        { "name": "Fried Onion and Grape Leaves", "price": 6.95, "id": 8 },
-        { "name": "Chess Baklava", "price": 5.30, "id": 9 },
-        { "name": "Gyro Biscuits", "price": 8.95, "id": 10 },
-        { "name": "Black Eye Pea Falafel", "price": 7.80, "id": 11 },
-        { "name": "Pecan Pastitsio", "price": 12.49, "id": 12 }
-    ],
-    "vegetables": [
-        { "id": 1, "type": "Okra", "price": 2.65 },
-        { "id": 2, "type": "Collard Greens", "price": 2.05 },
-        { "id": 3, "type": "Swiss Chard", "price": 2.15 },
-        { "id": 4, "type": "Corn", "price": 1.75 },
-        { "id": 5, "type": "Brussel Sprouts", "price": 3.00 },
-        { "id": 6, "type": "Sweet Potatoes", "price": 2.40 },
-        { "id": 7, "type": "Grits", "price": 3.05 },
-        { "id": 8, "type": "Fried Green Tomatoes", "price": 3.89 },
-        { "id": 9, "type": "Mac and Feta Cheese", "price": 2.55 }
-    ],
-    "sides": [
-        { "id": 1, "title": "Chicken Fried Steak Poppers", "price": 5.45 },
-        { "id": 2, "title": "Bacon", "price": 2.95 },
-        { "id": 3, "title": "Turkey Wings", "price": 4.80 },
-        { "id": 4, "title": "BBQ Lamb Ribs", "price": 9.25 },
-        { "id": 5, "title": "Catfish Nuggets", "price": 6.75 },
-        { "id": 6, "title": "Mini Souvlaki", "price": 5.20 }
-    ],
-    "purchases": []
+  "entrees": [
+    {
+      "id": 1,
+      "name": "Hummus and Hot Sauce",
+      "price": 6
+    },
+    {
+      "id": 2,
+      "name": "Chicken Fried Lamb Kabob",
+      "price": 14.25
+    },
+    {
+      "id": 3,
+      "name": "Hot Chicken Greek Salad",
+      "price": 10.5
+    },
+    {
+      "id": 4,
+      "name": "Brussel Sprout Moussaka",
+      "price": 11.5
+    },
+    {
+      "id": 5,
+      "name": "Okrakopita",
+      "price": 8.4
+    },
+    {
+      "id": 6,
+      "name": "Fried Onion and Grape Leaves",
+      "price": 6.95
+    },
+    {
+      "id": 7,
+      "name": "Chess Baklava",
+      "price": 5.3
+    },
+    {
+      "id": 8,
+      "name": "Gyro Biscuits",
+      "price": 8.95
+    },
+    {
+      "id": 9,
+      "name": "Black Eye Pea Falafel",
+      "price": 7.8
+    },
+    {
+      "id": 10,
+      "name": "Pecan Pastitsio",
+      "price": 12.49
+    }
+  ],
+  "vegetables": [
+    {
+      "id": 1,
+      "name": "Okra",
+      "price": 2.65
+    },
+    {
+      "id": 2,
+      "name": "Collard Greens",
+      "price": 2.05
+    },
+    {
+      "id": 3,
+      "name": "Swiss Chard",
+      "price": 2.15
+    },
+    {
+      "id": 4,
+      "name": "Corn",
+      "price": 1.75
+    },
+    {
+      "id": 5,
+      "name": "Brussel Sprouts",
+      "price": 3
+    },
+    {
+      "id": 6,
+      "name": "Sweet Potatoes",
+      "price": 2.4
+    },
+    {
+      "id": 7,
+      "name": "Grits",
+      "price": 3.05
+    },
+    {
+      "id": 8,
+      "name": "Fried Green Tomatoes",
+      "price": 3.89
+    },
+    {
+      "id": 9,
+      "name": "Mac and Feta Cheese",
+      "price": 2.55
+    }
+  ],
+  "sides": [
+    {
+      "id": 1,
+      "name": "Chicken Fried Steak Poppers",
+      "price": 5.45
+    },
+    {
+      "id": 2,
+      "name": "Bacon",
+      "price": 2.95
+    },
+    {
+      "id": 3,
+      "name": "Turkey Wings",
+      "price": 4.8
+    },
+    {
+      "id": 4,
+      "name": "BBQ Lamb Ribs",
+      "price": 9.25
+    },
+    {
+      "id": 5,
+      "name": "Catfish Nuggets",
+      "price": 6.75
+    },
+    {
+      "id": 6,
+      "name": "Mini Souvlaki",
+      "price": 5.2
+    }
+  ],
+  "sales": [
+    {
+      "id": 1,
+      "entreesId": 1,
+      "vegetablesId": 1,
+      "sidesId": 1,
+      "price": 14.1
+    },
+    {
+      "id": 2,
+      "entreesId": 2,
+      "vegetablesId": 2,
+      "sidesId": 2,
+      "price": 19.25
+    },
+    {
+      "id": 3,
+      "entreesId": 3,
+      "vegetablesId": 3,
+      "sidesId": 3,
+      "price": 17.45
+    },
+    {
+      "entreesId": 6,
+      "vegetablesId": 3,
+      "sidesId": 3,
+      "price": 13.9,
+      "id": 4
+    },
+    {
+      "entreesId": 3,
+      "vegetablesId": 1,
+      "sidesId": 2,
+      "price": 16.1,
+      "id": 5
+    },
+    {
+      "entreesId": 1,
+      "vegetablesId": 1,
+      "sidesId": 1,
+      "price": 14.1,
+      "id": 6
+    },
+    {
+      "entreesId": 1,
+      "vegetablesId": 4,
+      "sidesId": 2,
+      "price": 10.7,
+      "id": 7
+    },
+    {
+      "entreesId": 4,
+      "vegetablesId": 6,
+      "sidesId": 2,
+      "price": 16.85,
+      "id": 8
+    },
+    {
+      "entreesId": 2,
+      "vegetablesId": 2,
+      "sidesId": 2,
+      "price": 19.25,
+      "id": 9
+    },
+    {
+      "entreesId": 10,
+      "vegetablesId": 9,
+      "sidesId": 6,
+      "price": 20.24,
+      "id": 10
+    }
+  ]
 }

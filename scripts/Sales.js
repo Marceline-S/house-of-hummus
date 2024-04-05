@@ -1,10 +1,18 @@
-export const Sales = async () => {
-    const sales = await fetch("http://localhost:8088/orders").then(res => res.json())
+import {convertToUSD} from "./transientState.js"
 
-    let salesDivs = sales.map()
+export const sales = async () => {
 
-    salesDivs = salesDivs.join("")
+    // ADD EXPAND FUNCTIONALITY
+    const sales = await fetch("http://localhost:8088/sales?_expand=entrees&_expand=vegetables&_expand=sides")
+    const salesArray = await sales.json()
+    
+    let salesHTML = "<ol>";
 
-    return salesDivs
+    let stringHTML = salesArray.map((x) => `<div>Receipt ID: ${x.id} : ${convertToUSD(x.price)} : ${x.entrees.name}, ${x.vegetables.name}, ${x.sides.name}</div>`);
+    
+    salesHTML += stringHTML.join('');
+    
+    salesHTML += "</ol>";
+
+    return salesHTML
 }
-
